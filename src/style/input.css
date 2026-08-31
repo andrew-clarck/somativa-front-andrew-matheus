@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-jogo {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .card-jogo:hover {
+    transform: translateY(-4px);
+  }
+}
