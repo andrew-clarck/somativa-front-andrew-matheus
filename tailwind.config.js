@@ -3,7 +3,6 @@ module.exports = {
   content: [
     "./index.html", // Se você tiver um index.html na raiz
     "./src/**/*.js",
-    "./script/**/*.js", // Monitora tudo dentro de script
   ],
   theme: {
     extend: {
@@ -14,9 +13,9 @@ module.exports = {
         "cor-destaque": "#06B6D4",
         "texto-principal": "#F8FAFC",
         "texto-secundario": "#94A3B8",
-        borda: "#273449",
-        sucesso: "#22C55E",
-        erro: "#EF4444",
+        "borda": "#273449",
+        "sucesso": "#22C55E",
+        "erro": "#EF4444",
         "cor-secundaria": "#2563EB",
       },
     },
