@@ -1,12 +1,297 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GameHub</title>
+
     <link href="./dist/output.css" rel="stylesheet">
+    <script src="./src/script/script.js" defer></script>
 </head>
-<body>
-    
+
+<body class="bg-fundo text-texto-principal">
+
+    <!-- ==================== NAVBAR ==================== -->
+
+    <nav class="bg-fundo-card border-b border-borda">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-cor-principal">
+                🎮 GameHub
+            </a>
+
+            <!-- Menu -->
+            <div class="hidden md:flex gap-6 items-center">
+
+                <a href="#inicio"
+                    class="text-texto-secundario hover:text-cor-destaque transition">
+                    Início
+                </a>
+
+                <a href="#jogos"
+                    class="text-texto-secundario hover:text-cor-destaque transition">
+                    Jogos
+                </a>
+
+                <a href="#categorias"
+                    class="text-texto-secundario hover:text-cor-destaque transition">
+                    Categorias
+                </a>
+
+                <a href="#contato"
+                    class="text-texto-secundario hover:text-cor-destaque transition">
+                    Contato
+                </a>
+
+            </div>
+
+            <!-- Botão mobile -->
+            <button class="md:hidden bg-cor-principal text-texto-principal px-3 py-2 rounded-lg">
+                ☰
+            </button>
+
+        </div>
+    </nav>
+
+
+    <!-- ==================== HERO ==================== -->
+
+    <header id="inicio" class="bg-fundo py-20">
+
+        <div class="max-w-7xl mx-auto px-4 text-center">
+
+            <span class="text-cor-destaque font-bold">
+                🎮 BEM-VINDO AO GAMEHUB
+            </span>
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
+                Seu universo
+                <span class="text-cor-principal">
+                    gamer
+                </span>
+                em um só lugar.
+            </h1>
+
+            <p class="text-texto-secundario text-lg max-w-2xl mx-auto mt-6">
+                Descubra novos jogos, aventuras incríveis e experiências
+                que vão levar você para mundos completamente diferentes.
+            </p>
+
+            <a href="#jogos"
+                class="inline-block mt-8 bg-cor-principal hover:bg-cor-secundaria text-texto-principal font-bold px-6 py-3 rounded-lg transition">
+                Explorar jogos
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==================== JOGOS ==================== -->
+
+    <main id="jogos" class="max-w-7xl mx-auto px-4 py-16">
+
+        <div class="text-center mb-10">
+
+            <span class="text-cor-destaque font-bold">
+                NOSSA COLEÇÃO
+            </span>
+
+        </div>
+
+
+        <!-- GRID RESPONSIVO -->
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+
+
+
+   
+
+    <!-- ==================== CONTATO ==================== -->
+
+    <section id="contato" class="max-w-2xl mx-auto px-4 py-16">
+
+        <div class="text-center mb-8">
+
+            <span class="text-cor-destaque font-bold">
+                FALE CONOSCO
+            </span>
+
+            <h2 class="text-3xl font-bold mt-2">
+                Entre em contato
+            </h2>
+
+            <p class="text-texto-secundario mt-3">
+                Tem alguma dúvida ou sugestão? Envie uma mensagem.
+            </p>
+
+        </div>
+
+
+        <form class="bg-fundo-card border border-borda rounded-xl p-6">
+
+            <!-- Nome -->
+
+            <div class="mb-4">
+
+                <label for="nome"
+                    class="block text-texto-principal font-medium mb-2">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="mb-4">
+
+                <label for="email"
+                    class="block text-texto-principal font-medium mb-2">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
+
+            </div>
+
+
+            <!-- Assunto -->
+
+            <div class="mb-4">
+
+                <label for="assunto"
+                    class="block text-texto-principal font-medium mb-2">
+                    Assunto
+                </label>
+
+                <select
+                    id="assunto"
+                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
+
+                    <option value="">
+                        Selecione uma opção
+                    </option>
+
+                    <option value="duvida">
+                        Dúvida
+                    </option>
+
+                    <option value="sugestao">
+                        Sugestão
+                    </option>
+
+                    <option value="problema">
+                        Problema
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Mensagem -->
+
+            <div class="mb-6">
+
+                <label for="mensagem"
+                    class="block text-texto-principal font-medium mb-2">
+                    Mensagem
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    rows="5"
+                    placeholder="Digite sua mensagem"
+                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"></textarea>
+
+            </div>
+
+
+            <!-- Botão -->
+
+            <button
+                type="submit"
+                class="w-full bg-cor-principal hover:bg-cor-secundaria text-texto-principal font-bold py-3 rounded-lg transition">
+                Enviar mensagem
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="bg-fundo-card border-t border-borda">
+
+        <div class="max-w-7xl mx-auto px-4 py-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <div>
+
+                    <h3 class="text-xl font-bold text-cor-principal">
+                        🎮 GameHub
+                    </h3>
+
+                    <p class="text-texto-secundario text-sm mt-1">
+                        Seu universo gamer em um só lugar.
+                    </p>
+
+                </div>
+
+
+                <div class="flex gap-5">
+
+                    <a href="#inicio"
+                        class="text-texto-secundario hover:text-cor-destaque">
+                        Início
+                    </a>
+
+                    <a href="#jogos"
+                        class="text-texto-secundario hover:text-cor-destaque">
+                        Jogos
+                    </a>
+
+                    <a href="#contato"
+                        class="text-texto-secundario hover:text-cor-destaque">
+                        Contato
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-borda mt-6 pt-6 text-center">
+
+                <p class="text-texto-secundario text-sm">
+                    © 2026 GameHub. Projeto acadêmico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
+```
