@@ -12,15 +12,16 @@
     <script src="./src/script/script.js" defer></script>
 </head>
 
-<body class="bg-fundo text-texto-principal">
+<body class="bg-fundo-principal text-texto-principal">
 
     <!-- ==================== NAVBAR ==================== -->
 
     <nav class="bg-fundo-card border-b border-borda">
+
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
             <!-- Logo -->
-            <a href="#" class="text-2xl font-bold text-cor-principal">
+            <a href="#inicio" class="text-2xl font-bold text-cor-principal">
                 🎮 GameHub
             </a>
 
@@ -50,17 +51,19 @@
             </div>
 
             <!-- Botão mobile -->
-            <button class="md:hidden bg-cor-principal text-texto-principal px-3 py-2 rounded-lg">
+            <button
+                class="md:hidden bg-cor-principal hover:bg-cor-secundaria text-texto-principal px-3 py-2 rounded-lg transition">
                 ☰
             </button>
 
         </div>
+
     </nav>
 
 
     <!-- ==================== HERO ==================== -->
 
-    <header id="inicio" class="bg-fundo py-20">
+    <header id="inicio" class="bg-fundo-principal py-20">
 
         <div class="max-w-7xl mx-auto px-4 text-center">
 
@@ -69,21 +72,30 @@
             </span>
 
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
+
                 Seu universo
+
                 <span class="text-cor-principal">
                     gamer
                 </span>
+
                 em um só lugar.
+
             </h1>
 
             <p class="text-texto-secundario text-lg max-w-2xl mx-auto mt-6">
+
                 Descubra novos jogos, aventuras incríveis e experiências
                 que vão levar você para mundos completamente diferentes.
+
             </p>
 
-            <a href="#jogos"
+            <a
+                href="#jogos"
                 class="inline-block mt-8 bg-cor-principal hover:bg-cor-secundaria text-texto-principal font-bold px-6 py-3 rounded-lg transition">
+
                 Explorar jogos
+
             </a>
 
         </div>
@@ -95,22 +107,29 @@
 
     <main id="jogos" class="max-w-7xl mx-auto px-4 py-16">
 
+        <!-- Título da seção -->
+
         <div class="text-center mb-10">
 
             <span class="text-cor-destaque font-bold">
                 NOSSA COLEÇÃO
             </span>
 
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">
+                Jogos em destaque
+            </h2>
+
+            <p class="text-texto-secundario mt-3">
+                Confira alguns dos jogos mais populares da nossa coleção.
+            </p>
+
         </div>
 
 
-        <!-- GRID RESPONSIVO -->
+        <!-- ==================== GRID RESPONSIVO ==================== -->
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="listaJogos"></section>
 
-
-
-   
 
     <!-- ==================== CONTATO ==================== -->
 
@@ -139,34 +158,40 @@
 
             <div class="mb-4">
 
-                <label for="nome"
+                <label
+                    for="nome"
                     class="block text-texto-principal font-medium mb-2">
+
                     Nome
+
                 </label>
 
                 <input
                     type="text"
                     id="nome"
                     placeholder="Digite seu nome"
-                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
+                    class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
 
             </div>
 
 
-            <!-- Email -->
+            <!-- E-mail -->
 
             <div class="mb-4">
 
-                <label for="email"
+                <label
+                    for="email"
                     class="block text-texto-principal font-medium mb-2">
+
                     E-mail
+
                 </label>
 
                 <input
                     type="email"
                     id="email"
                     placeholder="Digite seu e-mail"
-                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
+                    class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
 
             </div>
 
@@ -175,14 +200,17 @@
 
             <div class="mb-4">
 
-                <label for="assunto"
+                <label
+                    for="assunto"
                     class="block text-texto-principal font-medium mb-2">
+
                     Assunto
+
                 </label>
 
                 <select
                     id="assunto"
-                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
+                    class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque">
 
                     <option value="">
                         Selecione uma opção
@@ -209,16 +237,19 @@
 
             <div class="mb-6">
 
-                <label for="mensagem"
+                <label
+                    for="mensagem"
                     class="block text-texto-principal font-medium mb-2">
+
                     Mensagem
+
                 </label>
 
                 <textarea
                     id="mensagem"
                     rows="5"
                     placeholder="Digite sua mensagem"
-                    class="w-full bg-fundo border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"></textarea>
+                    class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"></textarea>
 
             </div>
 
@@ -228,7 +259,9 @@
             <button
                 type="submit"
                 class="w-full bg-cor-principal hover:bg-cor-secundaria text-texto-principal font-bold py-3 rounded-lg transition">
+
                 Enviar mensagem
+
             </button>
 
         </form>
@@ -259,19 +292,28 @@
 
                 <div class="flex gap-5">
 
-                    <a href="#inicio"
+                    <a
+                        href="#inicio"
                         class="text-texto-secundario hover:text-cor-destaque">
+
                         Início
+
                     </a>
 
-                    <a href="#jogos"
+                    <a
+                        href="#jogos"
                         class="text-texto-secundario hover:text-cor-destaque">
+
                         Jogos
+
                     </a>
 
-                    <a href="#contato"
+                    <a
+                        href="#contato"
                         class="text-texto-secundario hover:text-cor-destaque">
+
                         Contato
+
                     </a>
 
                 </div>
