@@ -248,80 +248,74 @@
       </div>
     </footer>
     <!-- MODAL DE COMPRA -->
-<div
-  id="modalCompra"
-  class="hidden fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50"
-  <div class="bg-fundo-card border border-borda rounded-xl p-6 w-full max-w-md">
-
-    <div class="flex justify-between items-center mb-6">
-      <h2 class="text-2xl font-bold text-texto-principal">
-        Comprar jogo
-      </h2>
-
-      <button
-        id="fecharModal"
-        class="text-texto-secundario hover:text-cor-destaque text-2xl"
+    <div
+      id="modalCompra"
+      class="hidden fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50"
+    >
+      <div
+        class="bg-fundo-card border border-borda rounded-xl p-6 w-full max-w-md"
       >
-        &times;
-      </button>
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-texto-principal">Comprar jogo</h2>
+
+          <button
+            id="fecharModal"
+            class="text-texto-secundario hover:text-cor-destaque text-2xl"
+          >
+            &times;
+          </button>
+        </div>
+
+        <h3
+          id="modalTitulo"
+          class="text-xl font-bold text-cor-principal mb-2"
+        ></h3>
+
+        <p id="modalPreco" class="text-lg font-bold text-sucesso mb-6"></p>
+
+        <form id="formCompra">
+          <div class="mb-4">
+            <label
+              for="nomeCompra"
+              class="block text-texto-principal font-medium mb-2"
+            >
+              Nome
+            </label>
+
+            <input
+              id="nomeCompra"
+              type="text"
+              placeholder="Digite seu nome"
+              required
+              class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label
+              for="emailCompra"
+              class="block text-texto-principal font-medium mb-2"
+            >
+              E-mail
+            </label>
+
+            <input
+              id="emailCompra"
+              type="email"
+              placeholder="Digite seu e-mail"
+              required
+              class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-cor-principal hover:bg-cor-secundaria text-texto-principal font-bold py-3 rounded-lg transition"
+          >
+            Confirmar compra
+          </button>
+        </form>
+      </div>
     </div>
-
-    <h3
-      id="modalTitulo"
-      class="text-xl font-bold text-cor-principal mb-2"
-    ></h3>
-
-    <p
-      id="modalPreco"
-      class="text-lg font-bold text-sucesso mb-6"
-    ></p>
-
-    <form id="formCompra">
-
-      <div class="mb-4">
-        <label
-          for="nomeCompra"
-          class="block text-texto-principal font-medium mb-2"
-        >
-          Nome
-        </label>
-
-        <input
-          id="nomeCompra"
-          type="text"
-          placeholder="Digite seu nome"
-          required
-          class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"
-        >
-      </div>
-
-      <div class="mb-6">
-        <label
-          for="emailCompra"
-          class="block text-texto-principal font-medium mb-2"
-        >
-          E-mail
-        </label>
-
-        <input
-          id="emailCompra"
-          type="email"
-          placeholder="Digite seu e-mail"
-          required
-          class="w-full bg-fundo-principal border border-borda text-texto-principal rounded-lg px-4 py-3 focus:outline-none focus:border-cor-destaque"
-        >
-      </div>
-
-      <button
-        type="submit"
-        class="w-full bg-cor-principal hover:bg-cor-secundaria text-texto-principal font-bold py-3 rounded-lg transition"
-      >
-        Confirmar compra
-      </button>
-
-    </form>
-
-  </div>
-</div>
   </body>
 </html>

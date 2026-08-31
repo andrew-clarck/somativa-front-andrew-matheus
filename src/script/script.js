@@ -68,11 +68,7 @@ function criarCardJogo(jogo) {
   `;
 
   card.addEventListener("click", () => {
-    alert(
-      `🎮 ${jogo.titulo}\n\n` +
-        `Descrição: ${jogo.descricao}\n` +
-        `Preço: ${jogo.formatarPreco()}`,
-    );
+    abrirModal(jogo);
   });
 
   return card;
@@ -86,5 +82,33 @@ function renderizarListaJogos() {
     containerJogos.appendChild(card);
   });
 }
+
+function abrirModal(jogo) {
+  const modal = document.querySelector("#modalCompra");
+
+  document.querySelector("#modalTitulo").textContent = jogo.titulo;
+
+  document.querySelector("#modalPreco").textContent = jogo.formatarPreco();
+
+  modal.classList.remove("hidden");
+}
+
+const fecharModal = document.querySelector("#fecharModal");
+
+fecharModal.addEventListener("click", () => {
+  document.querySelector("#modalCompra").classList.add("hidden");
+});
+
+const formCompra = document.querySelector("#formCompra");
+
+formCompra.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  alert("Compra realizada com sucesso!");
+
+  document.querySelector("#modalCompra").classList.add("hidden");
+
+  formCompra.reset();
+});
 
 renderizarListaJogos();
